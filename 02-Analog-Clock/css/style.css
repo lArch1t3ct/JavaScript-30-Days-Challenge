@@ -3,6 +3,12 @@ html {
     background-size: cover;
 }
 
+body {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
 .clock {
     border: 20px solid white;
     width: 30rem;
@@ -17,6 +23,10 @@ html {
         inset 0 0 0 3px white,
         inset 0 0 10px black,
         0 0 10px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex: 1;
+    align-items: center;
 }
 
 .clock-face {
@@ -27,10 +37,23 @@ html {
 }
 
 .hand {
-    background: black;
+    background: white;
     height: 6px;
     width: 50%;
     top: 50%;
 
     position: absolute;
+}
+
+#attribution {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 30vh;
+
+}
+
+#attribution > a {
+    text-decoration: none;
+    color: white;
 }
