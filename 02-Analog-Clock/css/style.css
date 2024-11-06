@@ -47,7 +47,7 @@ body {
     transform: rotate(90deg); /* where the 0s is located */
     transform-origin: 100%; /* The right-most edge of the bar needs to be pinned down for the clock effect. */
     transition-timing-function: cubic-bezier(0, 3.38, 0.58, 1);
-    transition: all 0.05s;
+    /* transition: all 0.05s; */
 }
 
 #attribution {
