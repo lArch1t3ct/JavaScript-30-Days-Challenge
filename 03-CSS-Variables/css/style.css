@@ -1,0 +1,46 @@
+:root {
+    --base: orange;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+
+    width: 800px;
+    height: 600px;
+    margin-top: 40px;
+}
+
+.h1 {
+    color: var(--base);
+}
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+
+    font-family: 'helvetica neue', sans-serif;
+    font-size:50px;
+    font-weight: 100;
+}
+
+.controls {
+    margin-bottom: 50px;
+}
+
+input {
+    width: 100px;
+}
+
+#attribution {
+    font-size: 1.2rem;
+}
+
+#attribution a {
+    text-decoration: none;
+    color: white;
+}
