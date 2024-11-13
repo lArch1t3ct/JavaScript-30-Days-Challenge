@@ -84,6 +84,12 @@
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
+    const sortedWithoutComma = people.sort()
+                                     .map( (individual) => {
+                                        [lastName, firstName] = individual.split(', ');
+                                        return `${lastName} ${firstName}`;
+                                     });
+    console.table(sortedWithoutComma);
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
