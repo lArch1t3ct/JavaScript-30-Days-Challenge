@@ -94,7 +94,14 @@
     // 8. Reduce Exercise
     // Sum up the instances of each of these
     const data = ['car', 'car', 'truck', 'truck', 'bike', 'walk', 'car', 'van', 'bike', 'walk', 'car', 'van', 'car', 'truck' ];
-
+    const fleet = data.reduce( (vehicles, vehicle) => {
+        if(!Object.hasOwn(vehicles, vehicle)){
+            vehicles[vehicle] = 0;
+        }
+        vehicles[vehicle]++;
+        return vehicles;
+    }, {});
+    console.table(fleet);
   </script>
 </body>
 </html>
