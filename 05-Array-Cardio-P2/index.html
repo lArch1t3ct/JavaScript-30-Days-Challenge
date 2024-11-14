@@ -29,7 +29,10 @@
     // Array.prototype.some() // is at least one person 19 or older?
     const isAdult = people.some((individual) => ((new Date()).getFullYear()) - individual.year >= 19 );
     console.log("Is at least one person 19 years old or older?", isAdult);
+    
     // Array.prototype.every() // is everyone 19 or older?
+    const allAdults = people.every((individual) => ((new Date()).getFullYear) - individual.year >= 19);
+    console.log("Are all adults?", allAdults);
 
     // Array.prototype.find()
     // Find is like filter, but instead returns just the one you are looking for
