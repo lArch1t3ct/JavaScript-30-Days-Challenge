@@ -92,3 +92,13 @@ html {
     flex: 5;
     font-size: 40px;
   }
+
+  #attribution {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #attribution > a {
+    text-decoration: none;
+    color: white;
+  }
